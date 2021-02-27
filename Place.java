@@ -5,6 +5,7 @@ public class Place extends APlace {
 		super(namePlace);
 	}
 
+	@Override
 	public String getName() {
 		return toString();
 	}

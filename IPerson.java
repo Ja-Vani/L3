@@ -1,12 +1,10 @@
 
 public interface IPerson {
-	void like(Song song, String how);
+	void like(ISong song, String how);
 
-	void walk(Place place);
+	void walk(APlace place);
 
-	void sing(Song song, String how);
+	void sing(ISong song, String how);
 
-	void sit(Place place);
-	
-	void wear(Boot boot);
+	void sit(APlace place);
 }

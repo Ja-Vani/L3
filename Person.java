@@ -13,31 +13,30 @@ public class Person implements IPerson {
 	}
 
 	@Override
-	public void like(Song song, String how) {
+	public void like(ISong song, String how) {
 		status = song.sing(how);
 		System.out.println(this.toString() + " понравилась " + song.toString() + ",что он " + status + " еЄ ");
 		status += " " + song.toString();
 	}
 
 	@Override
-	public void walk(Place place) {
+	public void walk(APlace place) {
 		status = "шага€ по " + place.getName();
 		System.out.println(status);
 	}
 
 	@Override
-	public void sing(Song song, String how) {
+	public void sing(ISong song, String how) {
 		status = song.sing(how) + " " + song.toString();
 		System.out.println(status + how);
 	}
 
 	@Override
-	public void sit(Place place) {
+	public void sit(APlace place) {
 		status = "сидел у " + place.getName();
 		System.out.println(this.toString() + status);
 	}
 
-	@Override
 	public void wear(Boot boot) {
 		this.boot = boot;
 		System.out.println("нат€гива€ свои " + this.boot.getBoot());

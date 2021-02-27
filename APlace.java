@@ -6,6 +6,10 @@ public abstract class APlace {
 		this.namePlace = namePlace;
 	}
 
+	public String getName() {
+		return namePlace;
+	}
+
 	@Override
 	public int hashCode() {
 		return super.hashCode() + this.namePlace.hashCode();
