@@ -1,16 +1,17 @@
 public class Start {
 	public static void main(String[] args) {
-		Pers puh = new Pers(Persons.Vinni, "СѓРІРёРґРµР»");
-		Pers robbin = new Pers(Persons.Robin, "РЅР°С‚СЏРіРёРІР°СЏ");
-		Places forest = new Places("Р›РµСЃ");
-		Places porog = new Places("РїРѕСЂРѕРіР°");
-		SongSing shum = new SongSing("РЁСѓРјРµР»РєР°");
-		puh.like(shum, "СЃРѕ СЃР»РѕРІР°РјРё");
+		Person puh = new Person(Persons.Vinni);
+		Person robbin = new Person(Persons.Robin);
+		Place forest = new Place("Лес");
+		Place porog = new Place("порога");
+		Song shum = new Song("Шумелка");
+		Boot boot = new Boot("Походные сапоги");
+		puh.like(shum, "со словами");
 		puh.walk(forest);
-		puh.think();
-		puh.sing(shum, "Р±РµР· СЃР»РѕРІ");
+		puh.sing(shum, "без слов");
 		robbin.sit(porog);
-		puh.adventure();
-		puh.ready();
+		robbin.wear(boot);
+		puh.see(robbin);
+
 	}
 }
